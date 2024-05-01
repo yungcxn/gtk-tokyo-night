@@ -19,7 +19,7 @@
 @define-color theme_base_color #c0caf5;
 @define-color text_view_bg  #c0caf5;
 /*workaround for new vte versions */
-@define-color theme_text_color #2b3045;
+@define-color theme_text_color #24283b;
 @define-color theme_selected_bg_color #7aa2f7;
 @define-color theme_selected_fg_color #2b3045;
 @define-color theme_tooltip_bg_color #24283b;
@@ -74,7 +74,7 @@
 /* widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color mix(#24283b,#c0caf5,0.5);
 /* text color for entries, views and content in general on backdrop windows */
-@define-color theme_unfocused_text_color #2b3045;
+@define-color theme_unfocused_text_color #24283b;
 /* widget base background color on backdrop windows */
 @define-color theme_unfocused_bg_color #c0caf5;
 /* text widgets and the like base background color on backdrop windows */
@@ -536,13 +536,13 @@ spinbutton:not(.vertical) {
   padding: 0;
   border-radius: 3px;
   -gtk-outline-radius: 6.6px;
-  color: #2b3045;
-  caret-color: #2b3045;
+  color: #24283b;
+  caret-color: #24283b;
   /*&:focus, &:active { border-color: border_focus($borders_color); }*/ }
   spinbutton:not(.vertical):disabled {
     background-color: #9aaaef;
     background-image: none;
-    color: mix(#c0caf5,#2b3045,0.5); }
+    color: mix(#c0caf5,#24283b,0.5); }
   spinbutton:not(.vertical) entry {
     border-radius: 3px 0 0 3px;
     -gtk-outline-radius: 6.6px 0 0 6.6px;
@@ -794,26 +794,26 @@ combobox menu menuitem {
 entry {
   background-color: #c0caf5;
   background-image: none;
-  border-color: mix(#2b3045,#c0caf5,0.56);
+  border-color: mix(#24283b,#c0caf5,0.56);
   padding: 5px 3.6428571429px;
-  color: #2b3045;
+  color: #24283b;
   caret-color: #c0caf5;
   -gtk-secondary-caret-color: #e6e6e6; }
   entry:focus, entry:hover {
-    border-color: mix(#7aa2f7,mix(#2b3045,#c0caf5,0.7),0.3); }
+    border-color: mix(#7aa2f7,mix(#24283b,#c0caf5,0.7),0.3); }
   entry:active, entry:active:hover, entry:active:focus, entry:active:hover:focus, entry:checked, entry:checked:hover, entry:checked:focus, entry:checked:hover:focus {
-    border-color: mix(#2b3045,#c0caf5,0.48); }
+    border-color: mix(#24283b,#c0caf5,0.48); }
   entry:disabled {
-    border-color: mix(#2b3045,#c0caf5,0.64); }
+    border-color: mix(#24283b,#c0caf5,0.64); }
   entry:active:disabled, entry:checked:disabled {
-    border-color: mix(#2b3045,#c0caf5,0.56); }
+    border-color: mix(#24283b,#c0caf5,0.56); }
   entry:focus, entry:active {
     border-color: mix(#7aa2f7,mix(#c0caf5,#24283b,0.1),0.3); }
   entry:disabled {
-    background-color: mix(#c0caf5,#2b3045,0.07);
+    background-color: mix(#c0caf5,#24283b,0.07);
     background-image: none;
     opacity: .9;
-    color: mix(#c0caf5,#2b3045,0.9); }
+    color: mix(#c0caf5,#24283b,0.9); }
 
 /*********
  ! Buttons
@@ -2831,7 +2831,7 @@ headerbar.selection-mode,
 calendar {
   padding: 1px 3px;
   outline-offset: -1px;
-  color: #2b3045; }
+  color: #24283b; }
   calendar:selected {
     border-radius: 3px; }
   calendar.header {
@@ -2853,12 +2853,12 @@ calendar {
     font-size: smaller;
     color: mix(#7aa2f7,#24283b,0.5); }
   calendar:backdrop {
-    color: mix(#c0caf5,#2b3045,0.8); }
+    color: mix(#c0caf5,#24283b,0.8); }
 
 /* gnome-calendar */
 .calendar-view {
   background-color: #c0caf5;
-  color: #2b3045; }
+  color: #24283b; }
 
 /***************
  ! Color chooser
@@ -2902,11 +2902,11 @@ colorswatch.dark overlay {
     color: mix(#7aa2f7,#2b3045,0.66); }
 
 colorswatch.light overlay {
-  color: #2b3045; }
+  color: #24283b; }
   colorswatch.light overlay:hover {
     border-color: mix(#c0caf5,#24283b,0.1); }
   colorswatch.light overlay:backdrop {
-    color: mix(#c0caf5,#2b3045,0.8); }
+    color: mix(#c0caf5,#24283b,0.8); }
 
 colorswatch:drop(active) {
   box-shadow: none; }
@@ -2982,7 +2982,7 @@ widget:active {
   background-color: mix(#7aa2f7,#c0caf5,0.5); }
 
 list {
-  color: #2b3045;
+  color: #24283b;
   background-color: #c0caf5;
   border-color: mix(#c0caf5,#24283b,0.1); }
   list:backdrop {
@@ -4031,26 +4031,26 @@ popover.background {
   popover.background entry {
     background-color: #c0caf5;
     background-image: none;
-    border-color: mix(#2b3045,#c0caf5,0.56);
+    border-color: mix(#24283b,#c0caf5,0.56);
     padding: 5px 3.6428571429px;
-    color: #2b3045;
+    color: #24283b;
     caret-color: #c0caf5;
     -gtk-secondary-caret-color: #e6e6e6; }
     popover.background entry:focus, popover.background entry:hover {
-      border-color: mix(#7aa2f7,mix(#2b3045,#c0caf5,0.7),0.3); }
+      border-color: mix(#7aa2f7,mix(#24283b,#c0caf5,0.7),0.3); }
     popover.background entry:active, popover.background entry:active:hover, popover.background entry:active:focus, popover.background entry:active:hover:focus, popover.background entry:checked, popover.background entry:checked:hover, popover.background entry:checked:focus, popover.background entry:checked:hover:focus {
-      border-color: mix(#2b3045,#c0caf5,0.48); }
+      border-color: mix(#24283b,#c0caf5,0.48); }
     popover.background entry:disabled {
-      border-color: mix(#2b3045,#c0caf5,0.64); }
+      border-color: mix(#24283b,#c0caf5,0.64); }
     popover.background entry:active:disabled, popover.background entry:checked:disabled {
-      border-color: mix(#2b3045,#c0caf5,0.56); }
+      border-color: mix(#24283b,#c0caf5,0.56); }
     popover.background entry:focus, popover.background entry:active {
       border-color: mix(#7aa2f7,mix(#c0caf5,#24283b,0.1),0.3); }
     popover.background entry:disabled {
-      background-color: mix(#c0caf5,#2b3045,0.07);
+      background-color: mix(#c0caf5,#24283b,0.07);
       background-image: none;
       opacity: .9;
-      color: mix(#c0caf5,#2b3045,0.9); }
+      color: mix(#c0caf5,#24283b,0.9); }
   popover.background button, popover.background button.nautilus-circular-button.image-button {
     background-color: #2b3045;
     background-image: none;
@@ -4500,14 +4500,14 @@ SushiFontWidget {
 **************/
 GucharmapChartable {
   background-color: #c0caf5;
-  color: #2b3045; }
+  color: #24283b; }
 
 /*************
  ! Evolution *
 **************/
 EPreviewPane .entry {
   background-color: #c0caf5;
-  color: #2b3045; }
+  color: #24283b; }
 
 /*******************
  ! Gnome Bluetooth *
@@ -7040,11 +7040,11 @@ switch {
   min-width: 78px;
   min-height: 24px;
   background-color: mix(#c0caf5,#c0caf5,0.3);
-  color: #2b3045;
+  color: #24283b;
   box-shadow: inset 1px -1px 0 rgba(7, 8, 12, 0.06), inset -1px 1px 0 rgba(7, 8, 12, 0.06);
   font-size: 90%; }
   switch slider {
-    background-color: mix(#2b3045,#c0caf5,0.5);
+    background-color: mix(#24283b,#c0caf5,0.5);
     transition: all .3s ease-in;
     box-shadow: 0 1px 2px 0 rgba(7, 8, 12, 0.07), 1px 0 2px 0 rgba(7, 8, 12, 0.07);
     border-radius: 3px; }
@@ -7071,7 +7071,7 @@ switch {
       background-color: mix(mix(#c0caf5,#c0caf5,0.5),#c0caf5,0.4); }
     list row:selected switch:checked {
       color: #7aa2f7;
-      background-color: mix(#2b3045,#c0caf5,0.5); }
+      background-color: mix(#24283b,#c0caf5,0.5); }
       list row:selected switch:checked slider {
         background-color: #7aa2f7; }
 
@@ -7091,7 +7091,7 @@ switch {
 .view text,
 iconview text,
 textview text {
-  color: #2b3045;
+  color: #24283b;
   background-color: #c0caf5;
   caret-color: #c0caf5;
   -gtk-secondary-caret-color: #e6e6e6; }
@@ -7099,11 +7099,11 @@ textview text {
   .view text:backdrop,
   iconview text:backdrop,
   textview text:backdrop {
-    color: mix(#c0caf5,#2b3045,0.8);
+    color: mix(#c0caf5,#24283b,0.8);
     background-color: #c0caf5; }
   .view separator, iconview separator,
   textview text separator {
-    background-image: image(mix(#2b3045,#c0caf5,0.9)); }
+    background-image: image(mix(#24283b,#c0caf5,0.9)); }
 
 textview border {
   background-color: mix(#c0caf5,#c0caf5,0.5); }
@@ -7288,11 +7288,11 @@ frame.border-ridge > border {
 
 .content-view {
   background-color: mix(#c0caf5,#c0caf5,0.28);
-  color: mix(#2b3045,#24283b,0.18);
+  color: mix(#24283b,#24283b,0.18);
   border: 1px solid shade(mix(#c0caf5,#c0caf5,0.78),0.8); }
 
 viewport separator {
-  background-image: image(mix(#2b3045,#c0caf5,0.9)); }
+  background-image: image(mix(#24283b,#c0caf5,0.9)); }
 
 viewport menu separator {
   background-image: image(mix(#2b3045,#a9b1d6,0.18)); }
@@ -7696,7 +7696,7 @@ GeditFileBrowserWidget .toolbar {
 .gedit-search-entry-occurrences-tag {
   margin: 1.5px;
   padding: 1.5px;
-  color: mix(#2b3045,#c0caf5,0.5); }
+  color: mix(#24283b,#c0caf5,0.5); }
 
 .gedit-bottom-panel-paned,
 .gedit-side-panel-paned,
@@ -7782,8 +7782,8 @@ paned.titlebar {
 .nemo-window {
   /* Status Bar */ }
   .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-    background-color: mix(#c0caf5,#2b3045,0.12);
-    color: #2b3045; }
+    background-color: mix(#c0caf5,#24283b,0.12);
+    color: #24283b; }
   .nemo-window toolbar {
     border-width: 0 0 1px;
     border-style: solid;
@@ -7903,7 +7903,7 @@ GtkWindow > GtkVBox > .dock, GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar 
   border: 0;
   background-image: none;
   background-color: #c0caf5;
-  color: #2b3045; }
+  color: #24283b; }
 
 .xfce4-panel {
   font: inherit; }
